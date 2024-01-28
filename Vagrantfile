@@ -1,5 +1,5 @@
-Vagrant.configure("2") do |config|
-  # The base OS 
+Vagrant.configure("2")#do |config|
+    The base OS 
   config.vm.box = "ubuntu/trusty64"
   config.vm.provision :shell, :inline => "sudo apt-get update"
   
@@ -19,5 +19,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, :inline => "python3 -m pip install virtualenv"
 
   # reassuring message to complete:
-  config.vm.provision "shell", inline: "echo All set!", run: "always"
+  config.vm.provision "shell", inline: "echo All set#", run: "always"
 end
+ 
